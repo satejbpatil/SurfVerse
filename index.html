@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SurfVerse</title>
+  </head>
+  <link rel="stylesheet" href="switch.css">
+  <link rel="stylesheet" href="surfverse.css">
+  <link rel="stylesheet" href="style.css" />
+
+  <body>
+    <div id="main_page">
+        <div id="page1">
+            <div id="searchbar">
+                <div id="foue-items">
+                    <div id="privous" class="searchbar-items">
+                        <img src=".\All_Images\right_arrow.png" alt="pri." id="left-arrow-img" height="13px" width="13px">
+                    </div>
+                    <div id="after" class="searchbar-items"><img src=".\All_Images\right_arrow.png" alt="next." id="right-arrow-img" height="13px" width="13px"></div>
+                    <div id="refreah" class="searchbar-items"><button id="search-bar-refresh-button" onclick="search_bar_refresh_button()"><img src=".\All_Images\refresh-icon.png" alt="re." id="refresh-img" height="21px" width="21px"></button></div>
+                    <div id="bookmark-search" class="searchbar-items"><img src=".\All_Images\bookmark_searchbar.png" alt="book." id="bookmark-search-img" height="14px" width="16px"></div>
+                    <div id="search-text" class="searchbar-items">
+                        <img src=".\All_Images\google_icon.png" alt="g" id="google-img" height="13px" width="13px">
+                        <input type="text" id="search-innertext" placeholder="Search Google or type  URL">
+                        <button onclick="search()" type="submit" id="search-icon-button" class="small-button"><img src=".\All_Images\search_icon.png" alt="g" id="search-img" height="15px" width="15px"></button>
+                    </div>
+                    <div id="sur_logo">
+                        <img src=".\All_Images\surfverse_logo.png"  id="sur_logo_img"  alt="surfverse" height="35px" width="230px">
+                    </div>
+                </div>
+            </div>
+            <div id="upper-info">
+                <div id="right_info">
+                    <div id="trackers" class="left-info-items">
+                        <p id="trac-value">20,450</p>
+                        <p id="trac-info">Trackers & ads blocked</p>
+                    </div>
+                    <div id="bandwidth" class="left-info-items">
+                        <p id="bandwidth-value">
+                            <span id="bandwidth-value-span">20.23</span>MB
+                        </p>
+                        <p id="bandwidth-info">Bandwidth saved</p>
+                    </div>
+                    <div id="time-saved" class="left-info-items">
+                        <p id="time-saved-value">
+                            <span id="time-saved-value-span">20</span> minutes
+                        </p>
+                        <p id="time-saved-info">Time saved</p>
+                    </div>
+                    <div id="three-dot" class="left-info-items">
+                        <button id="three-dot-button" onclick="three_dot_button_right_info()">
+                        <strong>...</strong></button> 
+                    </div>
+                </div>
+                
+                <div class="right_info_dummy"></div>
+                <div id="clock">
+                    <div id="time"><span>11:09</span></div>
+                </div>
+            </div>
+            <div id="sites" class="blockwebsite">
+                <div id="threedots">
+                    <div id="site" class="classsite">
+                        <div id="site1" class="class-sites">
+                            <a href="https://www.youtube.com"><button id="btn1" class="sites-buttons"><img src=".\All_Images\youtube_icon.png" alt="img." height="40px" width="40px"></button></a> 
+                            <!-- <input type="button" id="btn1" class="sites-buttons"> -->
+                            <div id="btn1-info" class="btn-info">Youtube</div>       
+                        </div>
+                        <div id="site2" class="class-sites">
+                            <a href="https://www.geeksforgeeks.org/"><button id="btn2" class="sites-buttons"><img src=".\All_Images\gfg_logo.png" alt="img." height="37px" width="37px"></button></a> 
+                            <div id="btn2-info" class="btn-info">Geeksf..</div>           
+                        </div>
+                        <div id="site3" class="class-sites">
+                            <a href="https://leetcode.com/"><button id="btn3" class="sites-buttons"><img src=".\All_Images\leetcode_logo.png" alt="img." height="37px" width="37px"></button></a> 
+                            <div id="btn3-info" class="btn-info">LeetCo..</div>           
+                        </div>
+                        <div id="site4" class="class-sites">
+                            <a href="https://www.hackerrank.com/"><button id="btn4" class="sites-buttons"><img src=".\All_Images\Hackerrank_logo.png" alt="img." height="37px" width="37px"></button></a> 
+                            <div id="btn4-info" class="btn-info">Hacker..</div>           
+                        </div>
+                        <div id="site5" class="class-sites">
+                            <a href="https://chat.openai.com/"><button id="btn5" class="sites-buttons"><img src=".\All_Images\chatgpt_logo.png" alt="img." height="37px" width="37px"></button></a> 
+                            <div id="btn5-info" class="btn-info">ChatGPT</div>           
+                        </div>
+                        <div id="site6" class="class-sites">
+                            <a href="https://www.coursera.org/"><button id="btn6" class="sites-buttons"><img src=".\All_Images\cour_logo.png" alt="img." height="37px" width="37px"></button></a> 
+                            <div id="btn6-info" class="btn-info">Coursera</div>           
+                        </div>
+                        <!-- <div id="site7" class="class-sites">
+                            <input type="button" id="btn7" class="sites-buttons">
+                            <div id="btn7-info" class="btn-info">Youtube</div>           
+                        </div>   -->
+                    </div>
+                    <div id="three-dot1" class="left-info-items">
+                        <button id="three-dot-button1" onclick="three_dot_button_sites()">
+                        <strong>...</strong>
+                    </div>
+                </div>
+                <div class="right_info_dummy1"></div>
+            </div>
+
+            <div id="bottom-buttons" class="bottom-line">
+                <div id="custom-two-buttons">
+                    <div id="Customize" class="icons">
+                        <button onclick="customButtonFunction()" id="cus-button"><img src=".\All_Images\Customize_icon.png" alt="cos." id="Customize-img" height="5px" width="40px"></button>
+                    </div>
+                    <div id="constum" class="icons">
+                        <button onclick="customButtonFunction()" id="cus-button">Customize</button>
+                    </div>
+                </div>
+                <p id="line-divider">|</p>
+                <div id="setting" class="icons">
+                    <img src=".\All_Images\setting_logo.png" alt="sett." id="setting-img" height="40px" width="40px">
+                </div>
+                <div id="bookmark" class="icons">
+                    <img src=".\All_Images\bookmark_logo.png" alt="book." id="bookmark-img" height="20px" width="20px">
+                </div>
+                <div id="browsing-history" class="icons">
+                    <img src=".\All_Images\browsing_history.png" alt="history." id="browsing-img" height="20px" width="20px">
+                </div>
+                <div id="calls" class="icons">
+                    <img src=".\All_Images\video-meeting.png" alt="call." id="calls-img" height="20px" width="20px">
+                </div>
+            </div>
+            <div id="Customize-Dashboard" class="custom-popup" >
+                <div id="upper-section">
+                    <div id="title">
+                        <strong>Customize Dashboard</strong>
+                        <button onclick="closeCustomizeDashboard()" id="cross-icon-button" ><img src=".\All_Images\cross_icon.png" alt="*" id="cross-img" height="15px" width="15px"></button>
+                    </div>
+                </div>
+                <div id="lower-section">
+                    <div id="left-section">
+                        <div id="left-section-item1" class="left-section-items">
+                            <div id="color-section1" class="color-section"></div>
+                            <button class="left-section-buttons" onclick="leftSectionItem1()"><img src=".\All_Images\image_photo.png" alt="img." id="left-image1" class="item-images" height="20px" width="20px"></button>
+                            <button class="left-section-buttons" onclick="leftSectionItem1()"><div id="items-name1" class="items-names">Background Image</div></button>
+                        </div>
+                        <div id="left-section-item2" class="left-section-items">
+                            <div id="color-section2" class="color-section"></div>
+                            <button class="left-section-buttons" onclick="leftSectionItem2()" ><img src=".\All_Images\brave_stats.png" alt="stats." id="left-image2" class="item-images" height="20px" width="20px"></button>
+                            <button class="left-section-buttons" onclick="leftSectionItem2()" ><div id="items-name2" class="items-names">Surfverse Stats</div></button>
+                        </div>
+                        <div id="left-section-item3" class="left-section-items">
+                            <div id="color-section3" class="color-section"></div>
+                            <button class="left-section-buttons" onclick="leftSectionItem3()"><img src=".\All_Images\top-sites.png" alt="sites." id="left-image3" class="item-images" height="20px" width="20px"></button>
+                            <button class="left-section-buttons" onclick="leftSectionItem3()"><div id="items-name3" class="items-names">Top Sites</div></button>
+                        </div>
+                        <div id="left-section-item4" class="left-section-items">
+                            <div id="color-section4" class="color-section"></div>
+                            <button class="left-section-buttons" onclick="leftSectionItem4()"><img src=".\All_Images\brave-news.png" alt="news." id="left-image4" class="item-images" height="20px" width="20px"></button>
+                            <button class="left-section-buttons" onclick="leftSectionItem4()"><div  id="items-name4"class="items-names">Surfverse News</div></button>
+                        </div>
+                        <div id="left-section-item5" class="left-section-items">
+                            <div id="color-section5" class="color-section"></div>
+                            <button class="left-section-buttons" onclick="leftSectionItem5()"><img src=".\All_Images\clock.png" alt="history." id="left-image5" class="item-images" height="20px" width="20px"></button>
+                            <button class="left-section-buttons" onclick="leftSectionItem5()"><div id="items-name5" class="items-names">Clock</div></button>
+                        </div>
+                        <div id="left-section-item6" class="left-section-items">
+                            <div id="color-section6" class="color-section"></div>
+                            <button class="left-section-buttons" onclick="leftSectionItem6()"><img src=".\All_Images\card.png" alt="card" id="left-image5" class="item-images" height="20px" width="20px"></button>
+                            <button class="left-section-buttons" onclick="leftSectionItem6()"><div id="items-name6" class="items-names">Cards</div></button>
+                        </div>
+                    </div>
+                    <div id="right-section">
+                        <div id="right-first-line">
+                            <div id="first-text">Show Background Images</div>
+                            <div id="Background-Image-switch">
+                                <label class="switch">
+                                    <input type="checkbox" onclick="show_background_image_switch()" checked>
+                                    <span class="slider round"></span>
+                                </label>
+                            </div>
+
+                        </div>
+                        <div id="four-blocks">
+                            <div id="right-section-block1" class="right-bolcks">
+                                <button id="four-blocks-button1" onclick="useYourOwn()"><img src=".\All_Images\upload_photo.png" alt="Upload Img" height="150px" width="180px"></button>
+                                <div id="right-section-block1-innerblock1-text">
+                                    Use your own
+                                </div>
+
+                            </div>
+                            <div id="right-section-block2" class="right-bolcks">
+                                <button id="four-blocks-button2" onclick="brave_background()"><img src=".\All_Images\right_section_block2_image.jpg" alt="Upload Img" height="150px" width="180px"></button>
+                                <div id="right-section-block2-innerblock2-text">
+                                    Surfverse backgrounds
+                                </div>
+                            </div>
+                            <div id="right-section-block3" class="right-bolcks">
+                                <button id="four-blocks-button3"><img src=".\All_Images\right_section_block3_image.jpg" alt="Upload Img" height="150px" width="180px"></button>
+
+                                <div id="right-section-block3-innerblock3-text">
+                                    Soild Colors
+                                </div>
+                            </div>
+                            <div id="right-section-block4" class="right-bolcks">
+                                <button id="four-blocks-button4"><img src=".\All_Images\right_section_block4_image.png" alt="Upload Img" height="150px" width="180px"></button>
+
+                                <div id="right-section-block4-innerblock4-text">
+                                    Gradients
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="brave-stats_section">
+                        <div id="brave-stats_section-right-first-line">
+                            <div id="first-text1">Show Brave Stats</div>
+                            <div id="brave-stats-Image-switch">
+                                <label class="switch1">
+                                    <input type="checkbox" onclick="brave_stats_switch()" checked>
+                                    <span class="slider round"></span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="top_sites_section">
+                        <div id="top_sites_section-right-first-line">
+                            <div id="first-text2">Top Sites</div>
+                            <div id="top_sites_Image-switch">
+                                <label class="switch2">
+                                    <input type="checkbox" onclick="top_sites_switch()" checked>
+                                    <span class="slider round"></span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="clock_section">
+                        <div id="clock_section-right-first-line">
+                            <div id="first-text4">Show Clock</div>
+                            <div id="clock_section-switch">
+                                <label class="switch4">
+                                    <input type="checkbox" onclick="clock_switch()" checked>
+                                    <span class="slider round"></span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="news-titleqwe">Scroll for Surfverse News</div>
+        </div>  
+        <div id="page2">
+            <div id="news" class="newscontainer">
+                
+                <nav id="navid">
+                    <!-- <div class="main-nav-container-flex"> -->
+                    <div class="search-bar-flex">
+                        <input
+                        id="search-textasd"
+                        type="text"
+                        class="news-input"
+                        placeholder="Search News"
+                        />
+                        <button id="search-button" class="search-button">Search</button>
+                    </div>
+                    <!-- </div> -->
+                </nav>
+            
+                <main>
+                    <div class="cards-container container flex" id="cards-container"></div>
+                </main>
+            
+                <template id="template-news-card">
+                    <div class="card">
+                    <div class="card-header">
+                        <img
+                        src="https://via.placeholder.com/400x200"
+                        alt="news-image"
+                        id="news-img"
+                        />
+                    </div>
+                    <div class="card-content">
+                        <h3 id="news-title">This is the Title</h3>
+                        <h6 class="news-source" id="news-source">End Gadget 26/08/2023</h6>
+                        <p class="news-desc" id="news-desc">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae
+                        saepe quis voluptatum quisquam vitae doloremque facilis molestias
+                        quae ratione cumque!
+                        </p>
+                    </div>
+                    </div>
+                </template>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="script1.js"></script>
+    <script src="./customize_dashboard.js"></script>
+  </body>
+</html>
